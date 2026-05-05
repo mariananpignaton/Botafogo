@@ -1,4 +1,3 @@
-/* --- 1. Configurações Globais --- */
 * {
    margin: 0;
    padding: 0;
@@ -11,14 +10,14 @@ html {
 }
 
 body {
-   background-color: #cdcdcd; /* Seu cinza original */
-   padding-top: 56px; /* Espaço para a navbar fixa não cobrir o conteúdo */
+   background-color: #cdcdcd; 
+   padding-top: 56px; 
 }
 
-/* --- 2. Navbar e Navegação --- */
+
 .navbar {
-   background-color: #222 !important; /* Seu preto original */
-   border-bottom: 2px solid #ca5192; /* Detalhe em rosa */
+   background-color: #222 !important; 
+   border-bottom: 2px solid #ca5192; 
 }
 
 .nav-link {
@@ -28,16 +27,16 @@ body {
 }
 
 .nav-link:hover {
-   color: #ff67ed !important; /* Seu rosa de hover */
+   color: #ff67ed !important; 
 }
 
-/* --- 3. Seções e Layout --- */
+
 section {
    padding: 60px 20px;
    text-align: center;
 }
 
-/* Estilo de "Card" para as seções sobre o fundo cinza */
+
 .bg-white.shadow-sm {
    background-color: #ffffff !important;
    border-radius: 10px;
@@ -48,7 +47,7 @@ section {
    border-top: 5px solid #ca5192 !important;
 }
 
-/* --- 4. Seções com Imagem de Fundo (Full Height) --- */
+
 #home {
    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
                url('../img/hino.jpg') center/cover no-repeat;
@@ -73,7 +72,7 @@ section {
    margin: 20px 0;
 }
 
-/* --- 5. Tipografia e Cores --- */
+
 #home h1 {
    font-family: Georgia, 'Times New Roman', Times, serif;
    font-size: clamp(40px, 8vw, 80px); /* Ajusta conforme o tamanho da tela */
@@ -93,14 +92,14 @@ section {
    max-width: 800px;
 }
 
-/* Títulos de todas as seções */
+
 h2 {
    color: #ca5192;
    margin-bottom: 20px;
    font-weight: bold;
 }
 
-/* --- 6. Tabelas, Imagens e Mídia --- */
+
 table {
    background-color: white;
 }
@@ -111,7 +110,7 @@ th {
 }
 
 tr:hover {
-   background-color: #ffccef !important; /* Seu rosa de hover na tabela */
+   background-color: #ffccef !important; 
 }
 
 img {
@@ -128,7 +127,7 @@ video, audio {
    background: #000;
 }
 
-/* --- 7. Formulários e Botões --- */
+
 form label {
    font-weight: bold;
    color: #333;
@@ -153,9 +152,9 @@ button:hover, .btn:hover {
    transform: translateY(-2px);
 }
 
-/* --- 8. Rodapé --- */
+
 footer {
-   background: #ff64a4 !important; /* Seu rosa do footer */
+   background: #ff64a4 !important; 
    color: white;
 }
 
