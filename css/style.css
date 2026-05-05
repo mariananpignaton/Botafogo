@@ -1,0 +1,195 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Arial, sans-serif;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+nav {
+   background: #222;
+   padding: 15px;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   text-align: center;
+}
+nav ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+}
+
+
+nav ul li {
+   margin: 15px;
+}
+nav ul li a {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
+}
+nav ul li a:hover {
+   color: #ff67ed;
+}
+
+
+section {
+   padding: 80px 20px;
+   text-align: center;
+}
+
+
+form {
+   display: flex;
+   flex-direction:column;
+   max-width: 400px;
+   margin: auto;
+}
+form label {
+   text-align: left;
+   margin-top: 10px;
+   font-weight: bold;
+}
+form input, form textarea {
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+}
+
+
+form button{
+   background: #222;
+   color: white;
+   padding: 10px;
+   cursor: pointer;
+}
+form button:hover {
+   background: #ff3a8c;
+}
+
+
+body {
+   background-color: #cdcdcd;
+}
+
+table {
+border-collapse: collapse;
+width: 100%;
+}
+th, td {
+border: 1px solid #434343;
+padding: 12px;
+text-align: left;
+}
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+tr:hover {
+background-color: #ffccef;
+}
+
+#home{
+   background: url('../img/hino.jpg') center/cover no-repeat;
+   color: aliceblue;
+   text-align: center;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#lista-jogadores{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#lista-titulos{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#hino{
+   background: url('../img/Fundo.jpg') center/cover no-repeat;
+   text-align: center;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+#home h1{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   font-size: 60px;
+   color: #ca5192;
+}
+#home h2{
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   color: #ca5192;
+}
+#home p{
+   font-size: 30px;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: #ffc4f1;
+}
+
+
+img{
+   width: 300px;
+   border: 2px solid rgb(255, 180, 217);
+}
+
+
+#lista-jogadores h2{
+   color: #ca5192;
+}
+
+
+#lista-titulos h2{
+   color: #ca5192;
+}
+
+
+#hino h2{
+   color: #ca5192;
+}
+
+
+#Copa h2{
+   color: #ca5192;
+}
+
+
+#saiba-mais h2{
+   color: #ca5192;
+}
+
+
+#feedback h2{
+   color: #ca5192;
+}
+button {
+   background-color: #fd6ba8;
+   text-align: center;
+   transition: background 0.5s;
+}
+
+
+footer {
+   background: #ff64a4;
+   color: white;
+   text-align: center;
+   padding: 20px;
+}
