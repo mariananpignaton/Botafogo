@@ -1,3 +1,4 @@
+/* --- 1. Configurações Globais --- */
 * {
    margin: 0;
    padding: 0;
@@ -5,191 +6,166 @@
    font-family: Arial, sans-serif;
 }
 
-html{
+html {
    scroll-behavior: smooth;
 }
 
-nav {
-   background: #222;
-   padding: 15px;
-   position: fixed;
-   width: 100%;
-   top: 0;
-   left: 0;
-   text-align: center;
-}
-nav ul {
-   list-style: none;
-   display: flex;
-   justify-content: center;
-}
-
-
-nav ul li {
-   margin: 15px;
-}
-nav ul li a {
-   color: white;
-   text-decoration: none;
-   font-size: 18px;
-}
-nav ul li a:hover {
-   color: #ff67ed;
-}
-
-
-section {
-   padding: 80px 20px;
-   text-align: center;
-}
-
-
-form {
-   display: flex;
-   flex-direction:column;
-   max-width: 400px;
-   margin: auto;
-}
-form label {
-   text-align: left;
-   margin-top: 10px;
-   font-weight: bold;
-}
-form input, form textarea {
-   padding: 10px;
-   border: 1px solid #ccc;
-   border-radius: 5px;
-}
-
-
-form button{
-   background: #222;
-   color: white;
-   padding: 10px;
-   cursor: pointer;
-}
-form button:hover {
-   background: #ff3a8c;
-}
-
-
 body {
-   background-color: #cdcdcd;
+   background-color: #cdcdcd; /* Seu cinza original */
+   padding-top: 56px; /* Espaço para a navbar fixa não cobrir o conteúdo */
 }
 
-table {
-border-collapse: collapse;
-width: 100%;
-}
-th, td {
-border: 1px solid #434343;
-padding: 12px;
-text-align: left;
-}
-tr:nth-child(even) {
-background-color: #f2f2f2;
-}
-tr:hover {
-background-color: #ffccef;
+/* --- 2. Navbar e Navegação --- */
+.navbar {
+   background-color: #222 !important; /* Seu preto original */
+   border-bottom: 2px solid #ca5192; /* Detalhe em rosa */
 }
 
-#home{
-   background: url('../img/hino.jpg') center/cover no-repeat;
+.nav-link {
+   color: white !important;
+   font-size: 18px !important;
+   transition: color 0.3s;
+}
+
+.nav-link:hover {
+   color: #ff67ed !important; /* Seu rosa de hover */
+}
+
+/* --- 3. Seções e Layout --- */
+section {
+   padding: 60px 20px;
+   text-align: center;
+}
+
+/* Estilo de "Card" para as seções sobre o fundo cinza */
+.bg-white.shadow-sm {
+   background-color: #ffffff !important;
+   border-radius: 10px;
+   padding: 30px;
+}
+
+.border-pink {
+   border-top: 5px solid #ca5192 !important;
+}
+
+/* --- 4. Seções com Imagem de Fundo (Full Height) --- */
+#home {
+   background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+               url('../img/hino.jpg') center/cover no-repeat;
    color: aliceblue;
-   text-align: center;
-   height: 100vh;
-   display: flex;
-   flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#lista-jogadores{
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-#lista-titulos{
-   text-align: center;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-#hino{
-   background: url('../img/Fundo.jpg') center/cover no-repeat;
-   text-align: center;
    height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   text-align: center;
 }
 
+#hino {
+   background: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), 
+               url('../img/Fundo.jpg') center/cover no-repeat;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+   margin: 20px 0;
+}
 
-
-
-#home h1{
+/* --- 5. Tipografia e Cores --- */
+#home h1 {
    font-family: Georgia, 'Times New Roman', Times, serif;
-   font-size: 60px;
+   font-size: clamp(40px, 8vw, 80px); /* Ajusta conforme o tamanho da tela */
    color: #ca5192;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
-#home h2{
+
+#home h2 {
    font-family: Verdana, Geneva, Tahoma, sans-serif;
    color: #ca5192;
 }
-#home p{
-   font-size: 30px;
+
+#home p {
+   font-size: 24px;
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
    color: #ffc4f1;
+   max-width: 800px;
 }
 
+/* Títulos de todas as seções */
+h2 {
+   color: #ca5192;
+   margin-bottom: 20px;
+   font-weight: bold;
+}
 
-img{
+/* --- 6. Tabelas, Imagens e Mídia --- */
+table {
+   background-color: white;
+}
+
+th {
+   background-color: #222 !important;
+   color: white !important;
+}
+
+tr:hover {
+   background-color: #ffccef !important; /* Seu rosa de hover na tabela */
+}
+
+img {
    width: 300px;
-   border: 2px solid rgb(255, 180, 217);
+   max-width: 100%;
+   border: 3px solid rgb(255, 180, 217);
+   border-radius: 10px;
+   margin-top: 15px;
 }
 
-
-#lista-jogadores h2{
-   color: #ca5192;
+video, audio {
+   border: 2px solid #ca5192;
+   border-radius: 8px;
+   background: #000;
 }
 
-
-#lista-titulos h2{
-   color: #ca5192;
+/* --- 7. Formulários e Botões --- */
+form label {
+   font-weight: bold;
+   color: #333;
 }
 
-
-#hino h2{
-   color: #ca5192;
+.form-control:focus {
+   border-color: #ca5192;
+   box-shadow: 0 0 0 0.25rem rgba(202, 81, 146, 0.25);
 }
 
-
-#Copa h2{
-   color: #ca5192;
+button, .btn-primary, .btn {
+   background-color: #fd6ba8 !important;
+   color: white !important;
+   border: none !important;
+   padding: 12px 25px;
+   font-weight: bold;
+   transition: all 0.4s ease;
 }
 
-
-#saiba-mais h2{
-   color: #ca5192;
+button:hover, .btn:hover {
+   background-color: #ff3a8c !important;
+   transform: translateY(-2px);
 }
 
-
-#feedback h2{
-   color: #ca5192;
-}
-button {
-   background-color: #fd6ba8;
-   text-align: center;
-   transition: background 0.5s;
-}
-
-
+/* --- 8. Rodapé --- */
 footer {
-   background: #ff64a4;
+   background: #ff64a4 !important; /* Seu rosa do footer */
    color: white;
-   text-align: center;
-   padding: 20px;
+}
+
+footer a {
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+}
+
+footer a:hover {
+   text-decoration: underline;
+   color: #222;
 }
